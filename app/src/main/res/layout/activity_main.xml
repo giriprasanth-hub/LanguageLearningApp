@@ -1,0 +1,78 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD8E6"
+    android:padding="16dp">
+
+    <!-- Logo at the top -->
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher44"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- App title -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Language Learning App"
+        android:textSize="24sp"
+        android:textColor="#3A86FF"
+        android:layout_below="@id/appLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <!-- Buttons for navigation -->
+    <Button
+        android:id="@+id/quizButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take a Quiz"
+        android:layout_below="@id/appTitle"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button" />
+
+    <Button
+        android:id="@+id/progressButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Progress"
+        android:layout_below="@id/quizButton"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_button" />
+
+    <Button
+        android:id="@+id/achievementsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Achievements"
+        android:layout_below="@id/progressButton"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_button" />
+
+    <Button
+        android:id="@+id/forumButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Community Forum"
+        android:layout_below="@id/achievementsButton"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_button" />
+
+    <!-- Footer text -->
+    <TextView
+        android:id="@+id/footerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Made by Giriprasanth"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp" />
+</RelativeLayout>
